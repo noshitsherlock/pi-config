@@ -62,3 +62,13 @@ I would like a similar skill in Pi as clauds recap feature
 
 Consider rewriting pi-ai-commit to a script like q-pi
 See ~/Dev/scripts/q-pi
+
+## Disable model invocation support
+Add extension for handle skills that can not be invoked using human
+```yaml
+disable-model-invocation: true
+```
+
+This is part of the standard that I think Claude Code invokes. It is not part of the SKILLs standard that Pi uses.
+
+Also not executing `!<command>` inside skills.
