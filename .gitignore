@@ -2,3 +2,5 @@ agent/auth.json
 agent/bin/
 agent/sessions/
 agent/git/
+agent/mcp-auth/
+agent/mcp.json
