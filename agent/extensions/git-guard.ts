@@ -31,10 +31,10 @@ const INTERACTIVE_GIT_PATTERNS: RegExp[] = [
 const DESTRUCTIVE_GIT_PATTERNS: RegExp[] = [
   /git\s+reset\s+--hard/,
   /git\s+clean\s+-[a-zA-Z]*f/,
-  /git\s+checkout\s+\./,
+  /git\s+checkout\s+\.(?=\s|$)/,
   // Allows: list, show, create (read-only)
   /git\s+stash(?!\s+(list|show|create))(?:\s|$)/,
-  /git\s+add\s+(-A|--all|\.)/,
+  /git\s+add\s+(-A|--all|\.)(?=\s|$)/,
   /git\s+rm\s+(?:-[a-zA-Z]*f[a-zA-Z]*|--force)/,
 ];
 
